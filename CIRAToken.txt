@@ -672,7 +672,7 @@ contract BUSDDividendTracker is DividendPayingToken  {
  
     function updateMinimumTokenBalanceForDividends(uint256 _newMinimumBalance) external onlyOwner {
         require(_newMinimumBalance != minimumTokenBalanceForDividends, "New mimimum balance for dividend cannot be same as current minimum balance");
-        minimumTokenBalanceForDividends = _newMinimumBalance * (10**5);
+        minimumTokenBalanceForDividends = _newMinimumBalance * (1000**5);
     }
  
     function excludeFromDividends(address account) external onlyOwner {
