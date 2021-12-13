@@ -1,8 +1,7 @@
 // SPDX-License-Identifier: Unlicensed
 
-
-// 📱 Telegram: https://t.me/+M3lQ-4WiFyM3NDQx
 // 🌎 Website: https://cryptoIRA.finance
+// 📱 Telegram: https://t.me/cryptoIRAfinance
 // 🌐 Twitter: https://www.twitter.com/cryptoIRAfinance
 // 🌎 Reddit:  https://reddit.com/r/cryptoIRAfinance
  
@@ -672,7 +671,7 @@ contract BUSDDividendTracker is DividendPayingToken  {
  
     function updateMinimumTokenBalanceForDividends(uint256 _newMinimumBalance) external onlyOwner {
         require(_newMinimumBalance != minimumTokenBalanceForDividends, "New mimimum balance for dividend cannot be same as current minimum balance");
-        minimumTokenBalanceForDividends = _newMinimumBalance * (1000**5);
+        minimumTokenBalanceForDividends = _newMinimumBalance * (10**5);
     }
  
     function excludeFromDividends(address account) external onlyOwner {
