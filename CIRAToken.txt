@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: Unlicensed
 
 // 🌎 Website: https://cryptoIRA.finance
-// 📱 Telegram: https://t.me/cryptoIRAfinance
-// 🌐 Twitter: https://www.twitter.com/cryptoIRAfinance
+// 📱 Telegram: https://t.me/cryptoIRAchat
+// 🌐 Twitter: https://twitter.com/cryptoIRAtoken
 // 🌎 Reddit:  https://reddit.com/r/cryptoIRAfinance
  
 pragma solidity ^0.8.4;
@@ -941,8 +941,8 @@ contract CIRA is ERC20, Ownable {
     
     uint256 public constant MAX_SUPPLY = 10000000*(10**5);
  
-    uint256 public maxBuyTranscationAmount = MAX_SUPPLY.mul(5).div(1000); // 0.5%
-    uint256 public maxSellTransactionAmount = MAX_SUPPLY.mul(5).div(1000); // 0.5%
+    uint256 public maxBuyTranscationAmount = MAX_SUPPLY.mul(1).div(1000); // 1%
+    uint256 public maxSellTransactionAmount = MAX_SUPPLY.mul(1).div(1000); // 1%
     uint256 public maxWalletBalance =MAX_SUPPLY.mul(15).div(1000); // 1.5%
     uint256 public swapTokensAtAmount = 20 * 10**2 * 10**5;
  
